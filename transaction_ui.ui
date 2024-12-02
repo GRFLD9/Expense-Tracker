@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tr_dialog</class>
+ <widget class="QDialog" name="tr_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>351</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Transaction</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.767363, y2:0.937, stop:0.590909 rgba(56, 166, 123, 255), stop:0.846591 rgba(0, 0, 0, 236));
+font: Noto Sans;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="tr_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="tr_lbl">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 18pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Новая транзакция</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_choose_category">
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+font-size: 16pt;
+color: white;
+}
+
+
+QComboBox QListView {
+font-size: 16px;
+background-color: gray;
+color: white;
+}
+
+QComboBox::drop-down {
+color: green;
+}</string>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentText">
+         <string/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+color: white;
+padding-left: 10px;</string>
+        </property>
+        <property name="date">
+         <date>
+          <year>2024</year>
+          <month>11</month>
+          <day>10</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_description">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+color: white;
+padding-left: 10px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Описание</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_balance">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+color: white;
+padding-left: 10px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Сумма</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QRadioButton" name="rb_income">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;
+font-size: 18pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Доход</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rb_outcome">
+          <property name="styleSheet">
+           <string notr="true">color: white;
+font-size: 18pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Расход</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_new_transaction">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+font-size: 13pt;
+background-color: none;
+border: 1px solid white;
+border-top-left-radius: 7px;
+height: 40px;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 30)
+
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70)
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить транзакцию</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse_new_tr_dialog.qrc">
+          <normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resourse_new_tr_dialog.qrc"/>
+ </resources>
+ <connections/>
+</ui>

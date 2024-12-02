@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>category_dialog</class>
+ <widget class="QDialog" name="category_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>505</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Category</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.767363, y2:0.937, stop:0.590909 rgba(56, 166, 123, 255), stop:0.846591 rgba(0, 0, 0, 236));
+font: Noto Sans;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="categories_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;
+font-weight: bold;
+font-size: 15pt;</string>
+        </property>
+        <property name="text">
+         <string>Заменить категорию на главном экране</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="remove_categories_cmb_box">
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+font-size: 16pt;
+color: white;
+}
+
+
+QComboBox QListView {
+font-size: 16px;
+background-color: gray;
+color: white;
+}</string>
+        </property>
+        <property name="currentText">
+         <string/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="add_categories_cmb_box">
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+font-size: 16pt;
+color: white;
+}
+
+
+QComboBox QListView {
+font-size: 16px;
+background-color: gray;
+color: white;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+font-size: 13pt;
+background-color: none;
+border: 1px solid white;
+border-radius: 7px;
+height: 40px;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 30)
+
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70)
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить изменения</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse_new_tr_dialog.qrc">
+          <normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;
+font-weight: bold;
+font-size: 25pt;
+</string>
+        </property>
+        <property name="text">
+         <string>ИЛИ</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="new_category_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+font-size: 13pt;
+background-color: none;
+border: 1px solid white;
+border-radius: 7px;
+height: 40px;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 30)
+
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70)
+}</string>
+        </property>
+        <property name="text">
+         <string>Создать новую категорию</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse_new_tr_dialog.qrc">
+          <normaloff>:/icon/icons/category_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/category_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resourse_new_tr_dialog.qrc"/>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

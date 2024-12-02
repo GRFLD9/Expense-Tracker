@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/bookmark_check_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/category_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/celebration_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/dangerous_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/database_upload_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/directions_car_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/edit_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/file_export_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/flower.svg</file>
+    <file>icons/fork_spoon_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/grocery_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/human.svg</file>
+    <file>icons/monitoring_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/other_admission_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/palette_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/search_insights_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/settings.svg</file>
+    <file>icons/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/target_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/trending_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/trending_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/wifi_add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/work_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+  </qresource>
+</RCC>

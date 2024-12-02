@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>new_category_dialog</class>
+ <widget class="QDialog" name="new_category_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>328</width>
+    <height>248</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NewCategory</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.767363, y2:0.937, stop:0.590909 rgba(56, 166, 123, 255), stop:0.846591 rgba(0, 0, 0, 236));
+font: Noto Sans;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="tr_frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-size: 18pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Новая категория</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="category_name_edit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 16pt;
+color: white;
+padding-left: 10px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Название категории</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="choose_icon_cb">
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+font-size: 16pt;
+color: white;
+}
+
+
+QComboBox QListView {
+font-size: 16px;
+background-color: gray;
+color: white;
+}</string>
+        </property>
+        <property name="currentText">
+         <string/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>das</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/bookmark_check_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/bookmark_check_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/category_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/category_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/celebration_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/celebration_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/dangerous_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/dangerous_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/database_upload_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/database_upload_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/directions_car_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/directions_car_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/edit_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/edit_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/file_export_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/file_export_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/flower.svg</normaloff>:/icon/icons/flower.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/fork_spoon_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/fork_spoon_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/grocery_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/grocery_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/human.svg</normaloff>:/icon/icons/human.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/monitoring_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/monitoring_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/other_admission_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/other_admission_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/palette_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/palette_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/search_insights_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/search_insights_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/settings.svg</normaloff>:/icon/icons/settings.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/target_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/target_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/trending_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/trending_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/trending_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/trending_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/wifi_add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/wifi_add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse_new_tr_dialog.qrc">
+           <normaloff>:/icon/icons/work_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/work_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="choose_new_icon_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+font-size: 13pt;
+background-color: none;
+border: 1px solid white;
+
+height: 30px;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 30)
+
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70)
+}</string>
+        </property>
+        <property name="text">
+         <string>Выбрать свою иконку</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse_new_tr_dialog.qrc">
+          <normaloff>:/icon/icons/human.svg</normaloff>:/icon/icons/human.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="category_save_btn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+font-size: 13pt;
+background-color: none;
+border: 1px solid white;
+border-top-left-radius: 7px;
+height: 40px;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 30)
+
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70)
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить категорию</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourse_new_tr_dialog.qrc">
+          <normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icon/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resourse_new_tr_dialog.qrc"/>
+ </resources>
+ <connections/>
+</ui>

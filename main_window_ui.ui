@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1279</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExpenseTracker</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.591227, y2:0.727, stop:0.75 rgba(56, 166, 123, 255), stop:1 rgba(0, 0, 0, 236));
+font: &quot;Noto Sans&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="1,2,0">
+      <item row="0" column="1">
+       <widget class="QFrame" name="categories_frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>12</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 3px solid rgb(255,255,255);
+font-weight: bold;
+font-size: 20pt;
+     border-radius:7px;
+
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Категории</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/grocery_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>Продукты</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="total_groceries">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>0₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/fork_spoon_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>Рестораны и кафе</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="total_food">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>0₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/work_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>Бизнес</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="total_work">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>0₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/other_admission_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-weight: bold;
+font-size: 14pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>Прочее</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="total_other">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string>0₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFrame" name="balance_frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>12</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;
+font-weight: bold;
+font-size: 25pt;
+</string>
+           </property>
+           <property name="text">
+            <string>Баланс</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="current_balance">
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-size: 30pt;
+background-color: none;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string>0₽</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: none;
+padding-top: 10px;
+border: none;
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/trending_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+             </property>
+             <property name="text">
+              <string>Доход</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="income_balance">
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-size: 20pt;
+background-color: none;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string>0₽</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="maximumSize">
+              <size>
+               <width>24</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: none;
+padding-top: 10px;
+border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resourse.qrc">:/icons/icons/trending_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">color: white;
+font-size: 16pt;
+background-color: none;
+border: none;
+font-weight: bold;
+padding-top: 10px;</string>
+             </property>
+             <property name="text">
+              <string>Расход</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="outcome_balance">
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-size: 20pt;
+background-color: none;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string>0₽</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="btn_new_transaction">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 2px solid rgb(255,255,255);
+font-size: 13pt;
+     border-top-left-radius:7px;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+            </property>
+            <property name="text">
+             <string>Новая транзакция</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resourse.qrc">
+              <normaloff>:/icons/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_edit_transaction">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+    border: 2px solid rgb(255,255,255);
+font-size: 13pt;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+            </property>
+            <property name="text">
+             <string>Редактировать транзакцию</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resourse.qrc">
+              <normaloff>:/icons/icons/edit_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/edit_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_delete_transaction">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+    border: 2px solid rgb(255,255,255);
+font-size: 13pt;
+     border-top-right-radius:7px;
+width: 230;
+height: 50;
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}</string>
+            </property>
+            <property name="text">
+             <string>Удалить транзакцию</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resourse.qrc">
+              <normaloff>:/icons/icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableView">
+          <property name="styleSheet">
+           <string notr="true">QTableView {
+background-color: rgba(255, 255, 255, 30);
+ border: 2px solid rgba(255,255,255);
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+color: white;
+}
+
+QHeaderView::section {
+background-color: rgb(53, 53, 53);
+color: white;
+border: none;
+height: 50px;
+font-size: 16pt;
+}
+
+QTableView::item {
+    border-style: none;
+    border-bottom: 1px solid rgba(255,255,255,50);
+    padding-left: auto;
+    padding-right: auto;
+}
+
+QTableView::item:selected{
+	border: none;
+	color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 50);
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <widget class="QFrame" name="function_frame">
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>12</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="make_graph_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 2px solid rgb(255,255,255);
+font-weight: bold;
+font-size: 13pt;
+     border-radius:7px;
+
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Построить график</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resourse.qrc">
+             <normaloff>:/icons/icons/monitoring_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/monitoring_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="import_table_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 2px solid rgb(255,255,255);
+font-weight: bold;
+font-size: 13pt;
+     border-radius:7px;
+
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Импорт таблицы</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resourse.qrc">
+             <normaloff>:/icons/icons/database_upload_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/database_upload_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="export_data_btn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+     background-color:rgba(255,255,255,30);
+     border: 2px solid rgb(255,255,255);
+font-weight: bold;
+font-size: 13pt;
+     border-radius:7px;
+
+}
+QPushButton:hover{
+background-color:rgba(255,255,255,50);
+}
+QPushButton:pressed{
+background-color:rgba(255,255,255,70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Экспорт данных</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resourse.qrc">
+             <normaloff>:/icons/icons/file_export_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/file_export_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QFrame" name="logo_frame">
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-radius: 7px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="maximumSize">
+            <size>
+             <width>350</width>
+             <height>350</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 10px solid rgb(255,255,255);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resourse.qrc">:/logo/logo.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
